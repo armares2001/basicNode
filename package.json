@@ -1,0 +1,27 @@
+{
+  "name": "basic_node",
+  "version": "1.0.0",
+  "description": "the base of node server",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "myscript": "nodemon --inspect app.js",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/armares2001/basicNode.git"
+  },
+  "author": "armares2001",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/armares2001/basicNode/issues"
+  },
+  "homepage": "https://github.com/armares2001/basicNode#readme",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
