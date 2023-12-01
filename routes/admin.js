@@ -5,9 +5,11 @@ const rootDir = require("../utils/path");
 // router.use(express.static(path.join(rootDir, "public", "css")));
 router.use(express.json());
 
-const products = [];
+const products = [{ title: "test" }, { title: "test2" }];
 router.get("/add-product", function (req, res, next) {
-  res.sendFile(path.join(rootDir, "index.html"));
+  // res.render(path.join(rootDir, "views", "index.pug"));
+  res.render("index.pug", { test: 2, prods: products });
+  // res.sendFile(path.join(rootDir, "views", "index.html"));
   //   next("errore");
   //   next();
 });

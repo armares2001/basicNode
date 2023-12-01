@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title #{test}
+    link(rel="stylesheet", type="text/css", href="/index.css") 
+  body
+    each product in prods
+        h3 #{product.title}
+    form(action="/message", method="POST")
+      input(name="message", type="text")
+      input(name="id", type="hidden", value=2)
