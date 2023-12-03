@@ -8,7 +8,9 @@ router.use(express.json());
 const products = [{ title: "test" }, { title: "test2" }];
 router.get("/add-product", function (req, res, next) {
   // res.render(path.join(rootDir, "views", "index.pug"));
-  res.render("index.pug", { test: 2, prods: products });
+  // res.render("index.pug", { test: 2, prods: products });
+  console.log("Added product");
+  res.render("index.hbs", { test: "test", prods: products });
   // res.sendFile(path.join(rootDir, "views", "index.html"));
   //   next("errore");
   //   next();
