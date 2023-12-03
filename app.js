@@ -6,14 +6,14 @@ const { engine } = require("express-handlebars");
 const { router: adminRouter } = require("./routes/admin");
 const bodyParser = require("body-parser");
 
-app.engine(
-  "hbs",
-  engine({
-    layoutsDir: path.join(__dirname, "views", "layouts"),
-    defaultLayout: false,
-  })
-);
-app.set("view engine", "hbs");
+// app.engine(
+//   "hbs",
+//   engine({
+//     layoutsDir: path.join(__dirname, "views", "layouts"),
+//     defaultLayout: false,
+//   })
+// );
+app.set("view engine", "ejs");
 app.set("views", "views");
 app.use(express.static(path.join(__dirname, "public", "css")));
 
